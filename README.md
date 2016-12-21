@@ -1,12 +1,12 @@
-# cuid-java
+# cuid-android
 
-Collision-resistant ids for Java. This project is in early development. Issues and/or PRs are welcome.
+Collision-resistant ids for Android. This project is in early development. Issues and/or PRs are welcome.
 
 For more information check out the [main project](https://github.com/ericelliott/cuid).
 
 Currently available for Node, browsers, Ruby, .Net, Go, PHP and Elixir (see ports below -- more ports are welcome).
 
-`Cuid.createCuid()` returns a short random string with some collision-busting measures. Safe to use as HTML element ID's, and unique server-side record lookups.
+`new Cuid(context).createCuid()` returns a short random string with some collision-busting measures. Safe to use as HTML element ID's, and unique server-side record lookups.
 
 ## Example
 
@@ -19,26 +19,13 @@ String cuid = Cuid.createCuid();
 System.out.println(cuid); // ch72gsb320000udocl363eofy
 ```
 
-### Scala
-```scala
-import cool.graph.cuid._
-
-// later
-val cuid: String = Cuid.createCuid()
-println(cuid) // ch72gsb320000udocl363eofy
-```
-
 ## Installing
 ### Gradle
 ```
 dependencies {
-  compile 'cool.graph:cuid-java:0.1.1'
+  compile 'vivareal:cuid-android:0.1.0'
 }
 
-```
-### sbt
-```
-libraryDependencies += "cool.graph" % "cuid-java" % "0.1.1"
 ```
 
 ### Broken down
@@ -142,7 +129,7 @@ The algorithm is also easy to reproduce in other languages. You are encouraged t
 * [cuid for Haskell](https://github.com/eightyeight/hscuid) - [Daniel Buckmaster](https://github.com/eightyeight)
 * [cuid for Python](https://github.com/necaris/cuid.py) - [Rami Chowdhury](https://github.com/necaris)
 * [cuid for Clojure](https://github.com/hden/cuid) - [Hao-kang Den](https://github.com/hden)
-* [cuid for Java](https://github.com/graphcool/cuid-java) - [Nilan Marktanner](https://github.com/marktani)
+* [cuid for Java](https://github.com/graphcool/cuid-android) - [Nilan Marktanner](https://github.com/marktani)
 
 # Questions
 

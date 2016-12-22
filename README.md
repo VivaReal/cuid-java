@@ -15,7 +15,7 @@ Currently available for Node, browsers, Ruby, .Net, Go, PHP and Elixir (see port
 import cool.graph.cuid.Cuid;
 
 // later
-String cuid = Cuid.createCuid();
+String cuid = new Cuid(context).createCuid();
 System.out.println(cuid); // ch72gsb320000udocl363eofy
 ```
 
@@ -23,7 +23,7 @@ System.out.println(cuid); // ch72gsb320000udocl363eofy
 ### Gradle
 ```
 dependencies {
-  compile 'vivareal:cuid-android:0.1.0'
+  compile 'br.com.vivareal:cuid-android:0.1.0'
 }
 
 ```

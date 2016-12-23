@@ -22,6 +22,12 @@ System.out.println(cuid); // ch72gsb320000udocl363eofy
 ## Installing
 ### Gradle
 ```
+repositories {
+    maven {
+        url  "http://dl.bintray.com/vivareal/maven" 
+    }
+}
+
 dependencies {
   compile 'br.com.vivareal:cuid-android:0.1.0'
 }

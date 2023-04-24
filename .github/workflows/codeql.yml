@@ -60,6 +60,9 @@ jobs:
         distribution: 'temurin' # See 'Supported distributions' for available options
         java-version: '8'
 
+    - name: Touch local properties
+      run: touch local.properties
+      
     # Autobuild attempts to build any compiled languages  (C/C++, C#, Go, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild

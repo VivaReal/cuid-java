@@ -137,5 +137,5 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            core.setFailed("Gitleaks encountered leaks. Please fix it in order to keep a safe work.")
+            core.setFailed("Gitleaks encountered leaks. Please fix it in order to keep a safe work.") 
 
